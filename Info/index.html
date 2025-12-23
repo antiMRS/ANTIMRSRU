@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>antiMRS - Информация</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../Static/CSS/All.css" />
+  </head>
+  <body>
+    <script src="../Static/upper.js"></script>
+
+    <main class="main-content">
+      <section class="info-section">
+        <h2>Информация</h2>
+        <p>Этот сайт создан блогером antiMRS.</p>
+
+        <h3>Главное</h3>
+        <p>
+          Я начал вести свою блогерскую деятельность 12 ноября 2024 года (Тогда
+          был вылажен первый ролик на канал youtube)
+        </p>
+
+        <h3>Наши преимущества</h3>
+        <p>• Профессиональный подход к каждому проекту</p>
+        <p>• Использование современных технологий</p>
+        <p>• Гарантия качества и своевременного выполнения работ</p>
+        <p>• Поддержка клиентов на всех этапах сотрудничества</p>
+      </section>
+    </main>
+
+    <script src="../Static/footer.js"></script>
+
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+      const body = document.body;
+
+      themeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-theme");
+
+        if (body.classList.contains("dark-theme")) {
+          themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+          themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+      });
+    </script>
+  </body>
+</html>
