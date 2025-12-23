@@ -3,7 +3,9 @@ footer.innerHTML = `
 <div class="footer-content">
     <div class="footer-section">
       <h3>Быстрые ссылки</h3>
-      <a href="#">Главная</a>
+      <a href="https://antimrs.ru/">Главная</a>
+      <a href="https://antimrs.ru/Info">Информация</a>
+      <a href="https://antimrs.ru/Projects">Проекты</a>
     </div>
 
     <div class="footer-section">
@@ -18,6 +20,7 @@ footer.innerHTML = `
           ><i class="fab fa-youtube"></i
         ></a>
         <a href="https://github.com/antimrs"><i class="fab fa-github"></i></a>
+        <a href="https://twitch.tv/antiMRS"><i class="fab fa-twitch"></i></a>
       </div>
     </div>
   </div>
