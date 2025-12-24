@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="Static/CSS/All.css" />
+    <link rel="icon" href="Static/favicon.ico" />
   </head>
   <body>
     <script src="Static/upper.js"></script>
@@ -19,36 +20,36 @@
       </section>
 
       <section class="buttons-section">
-        <div class="card">
+        <div class="card" id="infBtn">
           <div class="card-icon">
             <i class="fas fa-info-circle"></i>
           </div>
           <h2>Информация</h2>
-          <p>Основные сведения о компании, услугах и контактах</p>
+          <p>Основные сведения</p>
         </div>
 
-        <div class="card">
+        <div class="card" id="prjBtn">
           <div class="card-icon">
             <i class="fas fa-project-diagram"></i>
           </div>
           <h2>Проекты</h2>
-          <p>Наши текущие и завершенные проекты с описанием и результатами</p>
+          <p>Мои проекта над которыми я работал/работаю</p>
         </div>
 
-        <div class="card">
+        <div class="card" id="lnkBtn">
           <div class="card-icon">
             <i class="fas fa-link"></i>
           </div>
           <h2>Ссылки</h2>
-          <p>Полезные ресурсы и ссылки на партнерские проекты</p>
+          <p>ссылки</p>
         </div>
 
-        <div class="card">
+        <div class="card" id="datBtn">
           <div class="card-icon">
             <i class="fas fa-chart-bar"></i>
           </div>
           <h2>Данные</h2>
-          <p>Статистика, аналитика и отчеты по деятельности компании</p>
+          <p>Различная полезная информация</p>
         </div>
       </section>
     </main>
@@ -58,6 +59,25 @@
     <script>
       const themeToggle = document.getElementById("themeToggle");
       const body = document.body;
+
+      //buttons
+      const infBtn = document.getElementById("infBtn");
+      const lnkBtn = document.getElementById("lnkBtn");
+      const prjBtn = document.getElementById("prjBtn");
+      const datBtn = document.getElementById("datBtn");
+
+      infBtn.addEventListener("click", () => {
+        window.location.assign("https://antimrs.ru/Info");
+      });
+      lnkBtn.addEventListener("click", () => {
+        window.location.assign("https://antimrs.ru/Links");
+      });
+      prjBtn.addEventListener("click", () => {
+        window.location.assign("https://antimrs.ru/Projects");
+      });
+      datBtn.addEventListener("click", () => {
+        window.location.assign("https://antimrs.ru/Data");
+      });
 
       themeToggle.addEventListener("click", () => {
         body.classList.toggle("dark-theme");
