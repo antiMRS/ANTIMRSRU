@@ -32,3 +32,22 @@ footer.innerHTML = `
 footer.className = "footer";
 
 document.body.append(footer);
+
+//buttons
+const infBtn = document.getElementById("infBtn");
+const lnkBtn = document.getElementById("lnkBtn");
+const prjBtn = document.getElementById("prjBtn");
+const datBtn = document.getElementById("datBtn");
+
+infBtn.addEventListener("click", () => {
+    window.location.assign("https://antimrs.ru/Info");
+});
+lnkBtn.addEventListener("click", () => {
+    window.location.assign("https://antimrs.ru/Links");
+});
+prjBtn.addEventListener("click", () => {
+    window.location.assign("https://antimrs.ru/Projects");
+});
+datBtn.addEventListener("click", () => {
+    window.location.assign("https://antimrs.ru/Data");
+});
