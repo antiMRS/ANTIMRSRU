@@ -113,6 +113,7 @@ body.dark-theme {
 .info-section p {
   margin-bottom: 15px;
   line-height: 1.6;
+  transition: color 0.3s ease;
 }
 
 .buttons-section {
