@@ -83,6 +83,15 @@ body.dark-theme {
   flex-grow: 1;
 }
 
+.hyper-link {
+  color: blue;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .hyper-link {
+  color: aquamarine;
+}
+
 .info-section {
   flex: 7;
   background: rgba(255, 255, 255, 0.9);
