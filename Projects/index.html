@@ -18,6 +18,14 @@
       <section class="info-section">
         <h2>Проекты</h2>
         <p>Этот страница создана для того, чтобы пречислить все мои проекты.</p>
+        <h3>Виджеты</h3>
+        <div>
+          @ URL: <a href="http://dev.antimrs.ru">dev.antimrs.ru</a>
+          <h2>Змейка</h2>
+          <div>
+           @ URL: <a href="http://dev.antimrs.ru/snake">dev.antimrs.ru/snake</a> 
+          </div>
+        </div>
         <h3>Textomania</h3>
         <div>
           @ URL: <a href="https://antimrs.online">antimrs.online</a><br /><i
@@ -30,24 +38,17 @@
         <h3>Этот сайт</h3>
         <br />
         <h3>YouTube Канал</h3>
+        <div>
+          @ URL: <a href="https://www.youtube.com/@antiMRS?sub_confirmation=1">www.youtube.com/@antiMRS</a>
+        </div>
+        <br />
+        <h3>Telegram Канал</h3>
+        <div>
+          <i class="fab fa-telegram"></i>: <a href="https://t.me/antimrs">@antimrs</a>
+        </div>
       </section>
     </main>
 
     <script src="../Static/footer.js"></script>
-
-    <script>
-      const themeToggle = document.getElementById("themeToggle");
-      const body = document.body;
-
-      themeToggle.addEventListener("click", () => {
-        body.classList.toggle("dark-theme");
-
-        if (body.classList.contains("dark-theme")) {
-          themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-        } else {
-          themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-        }
-      });
-    </script>
   </body>
 </html>
