@@ -11,7 +11,7 @@ document.body.append(upper);
 
 const themeToggle = document.getElementById("themeToggle");
 const body = document.body;
-let is_dark_theme = localStorage.getItem("dark_theme_enabled") || false;
+let is_dark_theme = localStorage.getItem("dark_theme_enabled") == "true";
 
 function updateTheme() {
     body.classList.toggle("dark-theme", is_dark_theme);
