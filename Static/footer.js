@@ -26,7 +26,7 @@ footer.innerHTML = `
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2025 Информационный портал.</p>
+    <p>2026 antiMRS &copy;</p>
   </div>
 `;
 footer.className = "footer";
